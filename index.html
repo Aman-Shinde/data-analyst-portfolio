@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Charset -->
+    <meta charset="UTF-8">
+
+    <!-- Viewport for responsive design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title of the page -->
+    <title>[Your Full Name] - Data Analyst Portfolio</title>
+
+    <!-- Meta description (appears in search results) -->
+    <meta name="description" content="Explore the portfolio of [Your Full Name], an experienced Data Analyst specializing in data science, statistical modeling, and data visualization. Skills include Python, SQL, Tableau, and PowerBI.">
+
+    <!-- Keywords for SEO -->
+    <meta name="keywords" content="Data Analyst Portfolio, Data Science, Data Visualization, Python, SQL, Tableau, PowerBI, Dash Plotly, Machine Learning, Statistical Modeling, Business Intelligence">
+
+    <!-- Author metadata -->
+    <meta name="author" content="[Your Full Name]">
+
+    <!-- Open Graph metadata for social media -->
+    <meta property="og:title" content="Data Analyst Portfolio | [Your Full Name]">
+    <meta property="og:description" content="Showcasing projects in data science, machine learning, and business intelligence using tools like Python, R, Tableau, and SQL.">
+    <meta property="og:image" content="[Link to your portfolio image/banner]">
+    <meta property="og:url" content="[Your Portfolio URL]">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter metadata for social media -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Data Analyst Portfolio | [Your Full Name]">
+    <meta name="twitter:description" content="Explore my data analytics projects showcasing skills in Python, SQL, Tableau, and more.">
+    <meta name="twitter:image" content="[Link to your portfolio image/banner]">
+
+    <!-- Structured data (JSON-LD) for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "[Your Full Name]",
+      "jobTitle": "Data Analyst",
+      "description": "Experienced Data Analyst with a focus on data science, visualization, and business intelligence using Python, SQL, and Tableau.",
+      "url": "[Portfolio URL]",
+      "sameAs": [
+        "[LinkedIn Profile URL]",
+        "[GitHub Profile URL]",
+        "[Twitter Profile URL]"
+      ],
+      "alumniOf": {
+        "@type": "CollegeOrUniversity",
+        "name": "Syracuse University",
+        "sameAs": "https://www.syracuse.edu/"
+      },
+      "knowsAbout": [
+        "Python",
+        "SQL",
+        "Data Visualization",
+        "Business Intelligence",
+        "Tableau",
+        "PowerBI",
+        "Machine Learning",
+        "Excel"
+      ],
+      "workExample": [
+        {
+          "@type": "CreativeWork",
+          "name": "Sales Performance Dashboard",
+          "description": "Developed a Tableau dashboard to track and analyze sales performance metrics, providing insights into customer trends.",
+          "url": "[Project URL or GitHub Link]"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Marketing Campaign Analysis",
+          "description": "Performed statistical analysis and A/B testing on marketing campaigns to evaluate effectiveness and improve targeting.",
+          "url": "[Project URL or GitHub Link]"
+        }
+      ]
+    }
+    </script>
+
+    <!-- Favicon -->
+    <link rel="icon" href="[Favicon URL]" type="image/x-icon">
+
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- AOS CDN CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <!-- Typed.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.0/typed.js"></script>
+
+</head>
+
+<body>
+
+    <section class="header_section section">
+
+        <nav>
+            <div class="logo">
+                <img src="shubham_logo.png" alt="Logo">
+            </div>
+            <ul class="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Service</a></li>
+                <li><a href="#">Experience</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <div class="bars">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </nav>
+
+        <div class="header_content">
+
+            <div class="client_info">
+                <h2 class='name'>Shubham Koshti</h2>
+                <h1 class='titles'>I am a <span id="typed-output"></span></h1>
+                <p class='description'>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua...</p>
+                <ul class="icons">
+                    <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                </ul>
+
+            </div>
+        </div>
+
+    </section>
+
+    <section class="about_section section">
+        <h2 class='section-title'>About Me</h2>
+        <div class="about_container">
+            <div class="about_image">
+                <img src="https://placehold.co/600x600" alt="Your Name" />
+            </div>
+
+            <div class="about_content">
+                <!-- Tab Buttons -->
+                <div class="tabs">
+                    <button class="tab-link active" onclick="openTab(event, 'experience')">Professional
+                        Experience</button>
+                    <button class="tab-link" onclick="openTab(event, 'interests')">My Interests</button>
+                </div>
+
+                <!-- Tab Content -->
+                <div id="experience" class="tab-content active">
+                    <h3>Professional Experience</h3>
+                    <p>With over 3 years of experience in web development, I have honed my skills in creating responsive
+                        and
+                        user-friendly applications using technologies like ReactJS, TypeScript, and Material-UI. My
+                        journey has
+                        been enriched by working on diverse projects, from designing engaging user interfaces to
+                        implementing
+                        robust back-end solutions.</p>
+                </div>
+
+                <div id="interests" class="tab-content">
+                    <h3>My Interests</h3>
+                    <p>Beyond coding, I am passionate about exploring new technologies and design trends. I enjoy
+                        participating
+                        in hackathons, contributing to open-source projects, and continuously learning to improve my
+                        skills. In
+                        my free time, I love photography and exploring the outdoors, capturing the beauty of nature.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="skills-section section">
+        <h2 class='section-title'>Skills</h2>
+        <div class="skills">
+            <div class="skill">
+                <i class="fas fa-chart-line"></i>
+                <p>Tableau</p>
+            </div>
+            <div class="skill">
+                <i class="fas fa-file-excel"></i>
+                <p>Excel (Statistical Modelling)</p>
+            </div>
+            <div class="skill">
+                <i class="fas fa-project-diagram"></i>
+                <p>Dash Plotly</p>
+            </div>
+            <div class="skill">
+                <i class="fas fa-chart-pie"></i>
+                <p>PowerBI</p>
+            </div>
+            <div class="skill">
+                <i class="fab fa-python"></i>
+                <p>Python</p>
+            </div>
+            <div class="skill">
+                <i class="fas fa-code"></i>
+                <p>R</p>
+            </div>
+            <div class="skill">
+                <i class="fas fa-database"></i>
+                <p>SQL</p>
+            </div>
+            <div class="skill">
+                <i class="fab fa-java"></i>
+                <p>Java</p>
+            </div>
+            <div class="skill">
+                <i class="fas fa-laptop-code"></i>
+                <p>C++</p>
+            </div>
+            <div class="skill">
+                <i class="fas fa-stream"></i>
+                <p>Apache Airflow</p>
+            </div>
+            <div class="skill">
+                <i class="fas fa-cogs"></i>
+                <p>ServiceNow</p>
+            </div>
+            <div class="skill">
+                <i class="fab fa-kubernetes"></i>
+                <p>Kubernetes</p>
+            </div>
+            <div class="skill">
+                <i class="fas fa-file-excel"></i>
+                <p>Microsoft Excel</p>
+            </div>
+            <div class="skill">
+                <i class="fas fa-desktop"></i>
+                <p>MS Office</p>
+            </div>
+            <div class="skill">
+                <i class="fas fa-database"></i>
+                <p>Azure Data Studio</p>
+            </div>
+            <div class="skill">
+                <i class="fas fa-server"></i>
+                <p>PostgreSQL</p>
+            </div>
+            <div class="skill">
+                <i class="fab fa-docker"></i>
+                <p>Docker</p>
+            </div>
+            <div class="skill">
+                <i class="fab fa-microsoft"></i>
+                <p>PowerApps</p>
+            </div>
+            <div class="skill">
+                <i class="fab fa-aws"></i>
+                <p>AWS (Lambda, EC2, S3)</p>
+            </div>
+            <div class="skill">
+                <i class="fab fa-microsoft"></i>
+                <p>Azure</p>
+            </div>
+            <div class="skill">
+                <i class="fas fa-cloud"></i>
+                <p>Salesforce CRM</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="timeline-section section">
+        <h2 class="section-title">My Journey</h2>
+
+        <div class="timeline">
+            <!-- Experience 1: iConsult Collaborative -->
+            <div class="timeline-item">
+                <div class="timeline-icon">
+                    <i class="fas fa-briefcase"></i>
+                </div>
+                <div class="timeline-content">
+                    <h3 class="timeline-date">Nov 2023 - Jul 2024</h3>
+                    <h4>Research Data Analyst | iConsult Collaborative | Syracuse, NY</h4>
+                </div>
+            </div>
+
+            <!-- Education 1: Syracuse University -->
+            <div class="timeline-item">
+                <div class="timeline-icon">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+                <div class="timeline-content">
+                    <h3 class="timeline-date">Aug 2022 - May 2024</h3>
+                    <h4>Syracuse University | Master of Science, Information Systems | Syracuse, NY</h4>
+                </div>
+            </div>
+
+            <!-- Experience 2: Infosys Limited -->
+            <div class="timeline-item">
+                <div class="timeline-icon">
+                    <i class="fas fa-briefcase"></i>
+                </div>
+                <div class="timeline-content">
+                    <h3 class="timeline-date">Nov 2020 - Apr 2022</h3>
+                    <h4>Data Analyst | Infosys Limited | Pune, India</h4>
+                </div>
+            </div>
+
+            <!-- Experience 3: Northway Motorsports -->
+            <div class="timeline-item">
+                <div class="timeline-icon">
+                    <i class="fas fa-briefcase"></i>
+                </div>
+                <div class="timeline-content">
+                    <h3 class="timeline-date">Nov 2019 - May 2020</h3>
+                    <h4>Data Science Intern | Northway Motorsports | Pune, India</h4>
+                </div>
+            </div>
+
+            <!-- Education 2: Pune University -->
+            <div class="timeline-item">
+                <div class="timeline-icon">
+                    <i class="fas fa-school"></i>
+                </div>
+                <div class="timeline-content">
+                    <h3 class="timeline-date">2015 - 2019</h3>
+                    <h4>Pune University | Bachelor of Technology, Computer Science | Pune, India</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects-section section">
+        <h2 class="section-title">Projects</h2>
+        <div class="projects-grid">
+
+            <div class="project-card">
+                <h3 class="project-title">Project 1: Ecology Platform Optimization</h3>
+                <ul class="project-details">
+                    <li>Reduced manual search time by 40% using advanced data modeling</li>
+                    <li>Uncovered critical insights with Tableau and Dash Plotly</li>
+                </ul>
+                <div class="tech-icons">
+                    <i class="fab fa-python"></i>
+                    <i class="fab fa-dashcube"></i>
+                    <i class="fab fa-tableau"></i>
+                </div>
+                <button class="view-code-btn">View Code</button>
+            </div>
+
+            <div class="project-card">
+                <h3 class="project-title">Project 2: Service Operations Productivity</h3>
+                <ul class="project-details">
+                    <li>Improved service operations productivity by 25%</li>
+                    <li>Enhanced customer segmentation using Python</li>
+                </ul>
+                <div class="tech-icons">
+                    <i class="fab fa-python"></i>
+                    <i class="fab fa-salesforce"></i>
+                    <i class="fab fa-postman"></i>
+                </div>
+                <button class="view-code-btn">View Code</button>
+            </div>
+
+            <div class="project-card">
+                <h3 class="project-title">Project 3: Electric Vehicle Sensor Data</h3>
+                <ul class="project-details">
+                    <li>Optimized data accuracy by extracting sensor data from an EV</li>
+                    <li>Improved vehicle range prediction models</li>
+                </ul>
+                <div class="tech-icons">
+                    <i class="fab fa-python"></i>
+                    <i class="fas fa-car"></i>
+                </div>
+                <button class="view-code-btn">View Code</button>
+            </div>
+
+            <div class="project-card">
+                <h3 class="project-title">Project 4: Real-time Dashboards</h3>
+                <ul class="project-details">
+                    <li>Developed real-time dashboards for better decision-making</li>
+                    <li>Increased stakeholder engagement using Dash Plotly</li>
+                </ul>
+                <div class="tech-icons">
+                    <i class="fab fa-dashcube"></i>
+                    <i class="fab fa-tableau"></i>
+                </div>
+                <button class="view-code-btn">View Code</button>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="contact-section section">
+        <h2 class="section-title">Contact Me</h2>
+        <div class="contact-card">
+            <div class="contact-details">
+                <div class="contact-item">
+                    <i class="fas fa-phone-alt"></i>
+                    <span>+1 234 567 890</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>example@email.com</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Syracuse, NY, USA</span>
+                </div>
+                <a href="mailto:example@email.com" class="contact-btn">Email Me</a>
+            </div>
+        </div>
+
+    </section>
+
+</body>
+
+    <!-- FONTAWESOME JS-->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+    <!-- AOS JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+    <script src="script.js"></script>
+
+</html>
