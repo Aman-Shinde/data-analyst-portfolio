@@ -705,3 +705,87 @@ nav {
         font-size: 0.9rem;
     }
 }
+
+
+
+
+
+
+/* Basic styling for the carousel */
+.carousel {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .carousel-track {
+    display: flex;
+    gap: 30px; /* Extra space between images */
+    animation: scroll 30s linear infinite; /* Continuous infinite scroll */
+    padding: 40px 0; /* Padding to prevent cropping */
+    width: max-content; /* Ensure track resizes based on content width */
+    overflow: visible; /* Allow overflow for tilted images */
+  }
+  
+  /* Image card style */
+  .image-card {
+    background-color: transparent;
+    border: 1px solid var(--color-primary);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px; /* Set width to 300px */
+    padding: 10px;
+    margin: 0 15px; /* Margin to adjust for tilts */
+    transform-origin: center;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .image-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+  }
+  
+  /* Context text below the image */
+  .image-description {
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  .image-description p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: var(--color-secondary);
+  }
+  
+  /* Tilt effects */
+  .tilt-left {
+    transform: rotate(-10deg);
+  }
+  
+  .tilt-right {
+    transform: rotate(10deg);
+  }
+  
+  /* Prevent cropping of tilted images */
+  .carousel-track {
+    padding-left: 60px; /* Extra space for tilted images */
+    padding-right: 60px;
+  }
+  
+  /* Infinite scrolling animation */
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+  
+  /* When hovering over the carousel, stop the scroll */
+  .carousel-track:hover {
+    animation-play-state: paused;
+  }
+  
