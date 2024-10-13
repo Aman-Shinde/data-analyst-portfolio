@@ -26,6 +26,10 @@
     font-family: 'Open Sans', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+  }
+
 body {
     background-color: var(--color-background);
 }
@@ -558,6 +562,14 @@ nav {
     gap: 20px;
 }
 
+.project-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px 8px 0 0;
+    object-fit: cover;
+    margin-bottom: var(--space-medium);
+}
+
 .project-card {
     background-color: transparent;
     border-radius: 8px;
@@ -633,9 +645,67 @@ nav {
 }
 
 
-
-
 /* section 6 */
+
+.certifiations-section {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.certifiations-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.certifiation-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px 8px 0 0;
+    object-fit: cover;
+    margin-bottom: var(--space-medium);
+}
+
+.certifiation-card {
+    background-color: transparent;
+    border-radius: 8px;
+    padding: 20px;
+    border: 1px solid var(--color-primary);
+}
+
+.certifiation-title {
+    font-size: 1.4rem;
+    color: var(--color-secondary);
+    margin-bottom: 15px;
+}
+
+.certifiation-date {
+    padding: 0;
+    font-size: 0.9rem;
+    color: var(--color-primary);
+}
+
+@media (max-width: 768px) {
+
+    .certifiations-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .certifiation-card {
+        margin: 0px auto;
+        width:90%;
+    }
+
+    .certifiation-title {
+        font-size: 1.2rem;
+    }
+
+    .certifiation-date {
+        font-size: 0.85rem;
+    }
+}
+
+/* section 7 */
 
 .contact-section {
     max-width: 800px;

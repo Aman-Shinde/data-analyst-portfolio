@@ -1,6 +1,6 @@
 // Initialize Typed.js
 new Typed('#typed-output', {
-    strings: ["App Developer", "Web Designer", "Freelancer"],
+    strings: ["Data Analyst", "Data Scientist", "Data Engineer"],
     typeSpeed: 60, // Speed in milliseconds for typing each character
     backSpeed: 40, // Speed in milliseconds for erasing each character
     backDelay: 1000, // Delay before starting to erase (optional)
